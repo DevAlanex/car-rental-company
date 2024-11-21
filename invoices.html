@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Invoices</title>
+</head>
+<body>
+    <h1>Manage Invoices</h1>
+
+    <h2>Add Invoice</h2>
+    <form action="add_invoice.php" method="POST">
+        <label>Rental ID: <input type="number" name="rentalId" required></label><br>
+        <label>Invoice Date: <input type="datetime-local" name="invoiceDate" required></label><br>
+        <label>Total Cost: <input type="number" step="0.01" name="invoiceTotalCost" required></label><br>
+        <button type="submit">Add Invoice</button>
+    </form>
+
+   

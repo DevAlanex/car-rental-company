@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Cars</title>
+</head>
+<body>
+    <h1>Manage Cars</h1>
+
+    <h2>Add Car</h2>
+    <form action="add_car.php" method="POST">
+        <label>VIN: <input type="number" name="carVin" required></label><br>
+        <label>Make: <input type="text" name="carMake" required></label><br>
+        <label>Model: <input type="text" name="carModel" required></label><br>
+        <label>Year: <input type="number" name="carYear" required></label><br>
+        
+        <!-- Color Dropdown Menu -->
+        <label>Color:
+            <select name="carColor" required>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Gray">Gray</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </label><br>
+        
+        <label>Daily Price: <input type="number" step="0.01" name="carDailyPrice" required></label><br>
+        
+        <!-- Location ID Dropdown Menu -->
+        <label>Location ID:
+            <select name="locationId" required>
+                <!-- Sample location IDs for demonstration; ideally, these would be dynamically generated -->
+                <option value="1">1 - LA Downtown</option>
+                <option value="2">2 - Houston Central</option>
+                <option value="3">3 - New York Broadway</option>
+                <!-- Additional options could be populated dynamically if connected to a backend -->
+            </select>
+        </label><br>
+        
+        <button type="submit">Add Car</button>
+    </form>
+
+    <h2>Car List</h2>
+    <table border="1">
+        <tr>
+            <th>VIN</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Daily Price</th>
+            <th>Location ID</th>
+            <th>Actions</th>
+        </tr>
+        <!-- Example data; to be replaced with dynamic content from the backend -->
+        <tr>
+            <td>1001</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2020</td>
+            <td>Blue</td>
+            <td>45.00</td>
+            <td>1 - LA Downtown</td>
+            <td><button>Update</button> <button>Delete</button></td>
+        </tr>
+    </table>
+</body>
+</html>
