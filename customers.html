@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Customers</title>
+</head>
+<body>
+    <h1>Manage Customers</h1>
+    
+    <h2>Add Customer</h2>
+    <form action="add_customer.php" method="POST">
+        <label>First Name: <input type="text" name="customerFirstName" required></label><br>
+        <label>Last Name: <input type="text" name="customerLastName" required></label><br>
+        <label>Email: <input type="email" name="customerEmail" required></label><br>
+        <label>Phone: <input type="text" name="customerPhone" required></label><br>
+        <button type="submit">Add Customer</button>
+    </form>
+
+    <h2>Customer List</h2>
+    <!-- This table will be populated by backend code fetching data from the database -->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+        <!-- Example data; to be replaced with dynamic content -->
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>123-456-7890</td>
+            <td><button>Update</button> <button>Delete</button></td>
+        </tr>
+    </table>
+</body>
+</html>
